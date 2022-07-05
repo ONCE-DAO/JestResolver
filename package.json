@@ -1,6 +1,6 @@
 {
   "name": "--",
-  "version": "0.0.1",
+  "version": "main",
   "description": "",
   "main": "index.mjs",
   "namespace": "--",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com:ONCE-DAO/##RepoName###readme",
   "devDependencies": {
+    "jest-resolve": "^28.1.1",
     "ts-node": "^10.4.0",
     "ts-patch": "^2.0.1",
     "typescript": "^4.7.2"
