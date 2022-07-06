@@ -3,7 +3,6 @@
   "version": "main",
   "description": "",
   "main": "index.mjs",
-  "namespace": "--",
   "onceDependencies": [
     "Once"
   ],

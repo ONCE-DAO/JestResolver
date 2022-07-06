@@ -6,8 +6,9 @@
     "target": "ESNEXT",
     "module": "CommonJS",
     "plugins": [],
-    "declaration": true,
-    "sourceMap": true,
+    "declaration": false,
+    "sourceMap": false,
+    
     // Module settings.
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
