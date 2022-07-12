@@ -17,7 +17,8 @@
     "resolveJsonModule": true,
   },
   "include": [
-    "./src/Jest.config.cts",
-    "./src/JestResolver.cts",
-  ]
+    "src/Jest.config.cts",
+    "src/JestResolver.cts",
+  ],
+  "exclude": []
 }
