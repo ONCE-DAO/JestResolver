@@ -39,8 +39,8 @@ class JestResolver {
         });
 
 
-        console.log("path", path);
-        console.log("result", result);
+        // console.log("path", path);
+        // console.log("result", result);
 
         return result;
     }
