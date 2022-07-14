@@ -48,7 +48,7 @@ class JestResolver {
     async resolvePath(path: string, options: ResolverOptions): Promise<string> {
         if (path === "./TEST_RESOLVE.mjs") return path = "./MyResolveResult.mjs";
 
-        if (path.startsWith("ior")) {
+        if (path.startsWith("ior") || path.startsWith("/ior")) {
             const result = (await
                 this.once.resolve(path, { conditions: [], importAssertions: {}, parentURL: undefined }, (path: string) => { return { url: path } })).url;
             this.cache.set(path, result);
