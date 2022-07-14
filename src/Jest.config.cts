@@ -25,7 +25,7 @@ export default async (): Promise<Config.InitialOptions> => {
     extensionsToTreatAsEsm: [".mts", ".ts"],
     // transformIgnorePatterns: ["MyResolveResult.mjs", "node_modules"],
     transformIgnorePatterns: ["MyResolveResult.mjs", "node_modules", "Scenarios/"],
-    testPathIgnorePatterns: ["3rdParty"],
+    testPathIgnorePatterns: ["3rdParty","Components/dev/zod"],
     setupFilesAfterEnv: ["@alex_neo/jest-expect-message"],
   };
 };

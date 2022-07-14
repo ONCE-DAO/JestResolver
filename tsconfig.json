@@ -1,24 +1,7 @@
 {
-  "extends": "../../../../../tsconfig.build.json",
-  "compilerOptions": {
-    "outDir": "../../../../../",
-    "rootDir": "./src",
-    "target": "ESNEXT",
-    "module": "CommonJS",
-    "plugins": [],
-    "declaration": false,
-    "sourceMap": false,
-    
-    // Module settings.
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-  },
+  "extends": "./tsconfig.build.json",
   "include": [
-    "src/Jest.config.cts",
-    "src/JestResolver.cts",
+    "./src",
+    "./test"
   ],
-  "exclude": []
 }
