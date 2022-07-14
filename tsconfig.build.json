@@ -8,7 +8,6 @@
     "plugins": [],
     "declaration": false,
     "sourceMap": false,
-    
     // Module settings.
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -17,7 +16,7 @@
     "resolveJsonModule": true,
   },
   "include": [
-    "src/Jest.config.cts",
+    "src/jest.config.cts",
     "src/JestResolver.cts",
   ],
   "exclude": []
