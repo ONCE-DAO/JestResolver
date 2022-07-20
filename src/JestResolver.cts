@@ -2,9 +2,8 @@ import defaultResolver from 'jest-resolve/build/defaultResolver';
 import { join, relative, resolve, sep } from 'path';
 export type Path = Parameters<typeof defaultResolver>[0];
 export type ResolverOptions = Parameters<typeof defaultResolver>[1];
-import { JestOnce } from "ior:esm:/tla.EAM.Once[build]"
+import { JestOnce, ComponentBuilder } from "ior:esm:/tla.EAM.Once[build]"
 // import { join, relative } from 'path';
-import ComponentBuilder from 'Scenarios/localhost/tla/EAM/Once/build/3_services/Build/BuildComponent.interface.mjs';
 
 class JestResolver {
     cache: Map<string, string> = new Map();
@@ -27,7 +26,7 @@ class JestResolver {
     async async(path: Path, options: ResolverOptions): Promise<Path> {
         await this.init()
         if (this.cache.has(path)) {
-            console.log("cached");
+            //console.log("cached");
 
             return this.cache.get(path) as string;
         }
